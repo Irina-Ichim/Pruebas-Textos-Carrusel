@@ -3,19 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Animación de Imágenes</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Galería Moderna</title>
 </head>
 <body>
 
-  <div class="container">
-    <img src="img/hacker.gif" alt="Imagen 1" class="animate-image">
-    <img src="img/presencia-en-linea.jpg" alt="Imagen 2" class="animate-image">
-    <img src="img/inteligencia-artificial.jpg" alt="Imagen 3" class="animate-image">
-    <img src="img/seo.jpg" alt="Imagen 4" class="animate-image">
-    <img src="img/hablamos.jpg" alt="Imagen 5" class="animate-image">
+  <div class="gallery-container">
+    <div class="gallery-item" onclick="openModal(); currentSlide(1)">
+      <img src="img/hacker.gif" alt="Imagen 1" class="gallery-image">
+    </div>
+    <div class="gallery-item" onclick="openModal(); currentSlide(2)">
+      <img src="img/presencia-en-linea.jpg" alt="Imagen 2" class="gallery-image">
+    </div>
+    <div class="gallery-item" onclick="openModal(); currentSlide(3)">
+      <img src="img/inteligencia-artificial.jpg" alt="Imagen 3" class="gallery-image">
+    </div>
+    <div class="gallery-item" onclick="openModal(); currentSlide(4)">
+      <img src="img/seo.jpg" alt="Imagen 4" class="gallery-image">
+    </div>
+    <div class="gallery-item" onclick="openModal(); currentSlide(5)">
+      <img src="img/hablamos.jpg" alt="Imagen 5" class="gallery-image">
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <img src="img/hacker.gif" alt="Imagen 1" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="img/presencia-en-linea.jpg" alt="Imagen 2" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="img/inteligencia-artificial.jpg" alt="Imagen 3" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="img/seo.jpg" alt="Imagen 4" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="img/hablamos.jpg" alt="Imagen 5" style="width:100%">
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
