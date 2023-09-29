@@ -3,18 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
   <link rel="stylesheet" href="style1.css">
-  <title>Transición de Imágenes</title>
+  <title>Galería Carrusel</title>
 </head>
 <body>
 
-  <div class="container">
-    <img src="img/hablamos.jpg" alt="Imagen 1" class="animate-image">
-    <img src="img/hacker.gif" alt="Imagen 2" class="animate-image">
-    <img src="img/inteligencia-artificial.jpg" alt="Imagen 3" class="animate-image">
-    <img src="img/logogif.gif" alt="Imagen 4" class="animate-image">
-    <img src="img/seo.jpg" alt="Imagen 5" class="animate-image">
+  <div class="carousel-container">
+    <div class="carousel">
+      <div><img src="img/hacker.gif" alt="Imagen 1" class="carousel-image"></div>
+      <div><img src="img/presencia-en-linea.jpg" alt="Imagen 2" class="carousel-image"></div>
+      <div><img src="img/inteligencia-artificial.jpg" alt="Imagen 3" class="carousel-image"></div>
+      <div><img src="img/seo.jpg" alt="Imagen 4" class="carousel-image"></div>
+      <div><img src="img/hablamos.jpg" alt="Imagen 5" class="carousel-image"></div>
+    </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="script1.js"></script>
 </body>
 </html>
+

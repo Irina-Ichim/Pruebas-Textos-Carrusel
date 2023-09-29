@@ -1,26 +1,15 @@
-body, html {
-    height: 100%;
+body {
     margin: 0;
-    overflow: hidden; /* Para ocultar el desbordamiento vertical */
+    font-family: 'Arial', sans-serif;
   }
   
-  .container {
-    position: relative;
-    height: 500%; /* Ajusta según la cantidad de imágenes y la resolución de tu pantalla */
+  .carousel-container {
+    max-width: 800px;
+    margin: 50px auto;
   }
   
-  .animate-image {
-    position: absolute;
-    bottom: 0;
-    animation: moveUp 5s linear infinite;
-  }
-  
-  @keyframes moveUp {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(-100%);
-    }
+  .carousel-image {
+    width: 100%;
+    height: auto;
   }
   
