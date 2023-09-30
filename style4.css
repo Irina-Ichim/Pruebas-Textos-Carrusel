@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .masonry-container {
+    max-width: 800px;
+    margin: 50px auto;
+  }
+  
+  .masonry {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px; /* Margen negativo para compensar el espacio entre los elementos */
+  }
+  
+  .masonry-item {
+    flex: 1 1 calc(33.33% - 16px); /* 3 columnas con un espacio de 16px entre ellas */
+    margin: 16px; /* Espacio entre los elementos */
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    cursor: pointer;
+    animation: fadeInUp 0.8s forwards;
+  }
+  
+  .masonry-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .masonry-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

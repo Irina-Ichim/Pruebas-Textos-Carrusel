@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    width: 100vw;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
