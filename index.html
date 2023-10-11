@@ -3,52 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Probando textos</title>
   <link rel="stylesheet" href="style.css">
-  <title>Galería Moderna</title>
 </head>
 <body>
+  
+  <header>
+    <h1>Pruebas</h1>
+  </header>
 
-  <div class="gallery-container">
-    <div class="gallery-item" onclick="openModal(); currentSlide(1)">
-      <img src="img/hacker.gif" alt="Imagen 1" class="gallery-image">
-    </div>
-    <div class="gallery-item" onclick="openModal(); currentSlide(2)">
-      <img src="img/presencia-en-linea.jpg" alt="Imagen 2" class="gallery-image">
-    </div>
-    <div class="gallery-item" onclick="openModal(); currentSlide(3)">
-      <img src="img/inteligencia-artificial.jpg" alt="Imagen 3" class="gallery-image">
-    </div>
-    <div class="gallery-item" onclick="openModal(); currentSlide(4)">
-      <img src="img/seo.jpg" alt="Imagen 4" class="gallery-image">
-    </div>
-    <div class="gallery-item" onclick="openModal(); currentSlide(5)">
-      <img src="img/hablamos.jpg" alt="Imagen 5" class="gallery-image">
-    </div>
+  <nav>
+    <a href="prueba1.html">Prueba 1</a>
+    <a href="prueba2.html">Prueba 2</a>
+    <a href="prueba3.html">Prueba 3</a>
+    <a href="prueba4.html">Prueba 4</a>
+  </nav>
+
+  <div class="contenido" id="contenido">
+    <!-- Tu imagen aquí -->
+    <p class="parrafo">   Soy Irina Ichim, una desarrolladora full-stack apasionada por crear
+      soluciones digitales. Mi trayectoria profesional comenzó como
+      emprendedora, donde dirigí varios negocios. Durante ese tiempo,
+      descubrí la importancia de tener presencia en línea y decidí
+      adentrarme en el mundo de la programación. Cada paso me permitió
+      ampliar mis habilidades y conocimientos en el ámbito de la
+      programación y el desarrollo de aplicaciones.
+    </p>
+    <p class="parrafo">
+      Si estás buscando una profesional versátil y comprometida con la
+      excelencia, estaré encantada de colaborar contigo en tu próximo
+      proyecto. </span><br /><br />
+    </p>
+   <p class="parrafo"> Además, tengo un gran interés en<span>
+    colaborar con expertos del sector y trabajar en equipo</span
+  >
+  para abordar desafíos complejos y emocionantes. Me encanta la dinámica
+  del trabajo en grupo, donde cada miembro puede aportar su experiencia
+  única y juntos crear soluciones innovadoras.<br /><br /></p>
+  <p class="parrafo">  También es importante mencionar que tengo interés en el
+    <span>trabajo remoto y la flexibilidad laboral.</span> Valorar la
+    posibilidad de trabajar de manera remota me permite aprovechar al
+    máximo mi pasión por la programación y mantener un equilibrio
+    saludable entre mi vida personal y profesional.</p>
+
+    <p class="mostrar-mas" onclick="mostrarSiguiente()">Mostrar más</p>
+  
+
+
   </div>
-
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-      <div class="mySlides">
-        <img src="img/hacker.gif" alt="Imagen 1" style="width:100%">
-      </div>
-      <div class="mySlides">
-        <img src="img/presencia-en-linea.jpg" alt="Imagen 2" style="width:100%">
-      </div>
-      <div class="mySlides">
-        <img src="img/inteligencia-artificial.jpg" alt="Imagen 3" style="width:100%">
-      </div>
-      <div class="mySlides">
-        <img src="img/seo.jpg" alt="Imagen 4" style="width:100%">
-      </div>
-      <div class="mySlides">
-        <img src="img/hablamos.jpg" alt="Imagen 5" style="width:100%">
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="script3.js"></script>
 </body>
 </html>
 

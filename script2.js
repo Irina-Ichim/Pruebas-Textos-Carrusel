@@ -1,9 +1,16 @@
-$(document).ready(function(){
-    // Inicializar Masonry
-    $('.masonry').masonry({
-      itemSelector: '.masonry-item',
-      columnWidth: '.masonry-item',
-      percentPosition: true
-    });
-  });
-  
+/* Otro estilo para el texto utilizando FadeIn, cambialo en index.html*/
+$(document).ready(function() {
+  var parrafos = $('.parrafo');
+  var indiceActual = 0;
+
+  function mostrarSiguiente() {
+    if (indiceActual < parrafos.length) {
+      $(parrafos[indiceActual]).fadeIn(); // Cambiado a fadeIn
+      indiceActual++;
+    } else {
+      $('.mostrar-mas').hide();
+    }
+  }
+
+  $('.mostrar-mas').on('click', mostrarSiguiente);
+});

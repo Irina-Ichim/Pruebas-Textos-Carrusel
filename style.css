@@ -1,70 +1,54 @@
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 16px;
-    padding: 16px;
-  }
-  
-  .gallery-item {
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .gallery-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  /* Estilos del lightbox */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 50px;
-    left: 0;
-    top: 0;
-    width: 50%;
-    height: 50%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-  }
-  
-  .modal-content {
-    margin: auto;
-    display: flex;
-  }
-  
-  .mySlides {
-    display: none;
-  }
-  
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1f242d;
+}
+
+header {
+  background-color: #1f242d;
+  padding: 15px;
+  text-align: center;
+  color: #ddd;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #de43ba;
+  color: #ddd; /* Mantén el color del texto blanco en el hover */
+}
+
+.contenido {
+  width: 300px;
+  overflow: hidden;
+}
+
+.parrafo {
+  display: none;
+  background: linear-gradient(45deg, #1f242d, #de43ba); /* Ejemplo de gradiente */
+  color: #fff; /* Asegura que el texto sea legible en el fondo */
+  padding: 20px; /* Añade un poco de espacio alrededor del texto */
+}
+
+
+.mostrar-mas {
+  cursor: pointer;
+  color: #fff; /* Cambiado a blanco para ser más visible en el fondo oscuro */
+}
+
   
   
   
