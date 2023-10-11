@@ -1,11 +1,17 @@
-$(document).ready(function(){
-    gsap.from(".masonry-item", {
-      opacity: 0,
-      y: 100,
-      stagger: 0.2,
-      duration: 1,
-      ease: "power3.out"
-    });
-  });
-  
-  
+// script4.js
+
+document.addEventListener('DOMContentLoaded', function() {
+  var parrafos = document.querySelectorAll('.parrafo');
+  var indiceActual = 0;
+
+  window.mostrarSiguiente = function() {
+    if (indiceActual < parrafos.length) {
+      parrafos[indiceActual].classList.add('mostrar');
+      indiceActual++;
+      console.log("Función mostrarSiguiente llamada");
+    } else {
+      document.querySelector('.mostrar-mas').style.display = 'none';
+    }
+  };
+});
+

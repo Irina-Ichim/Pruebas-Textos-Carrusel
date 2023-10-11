@@ -1,15 +1,55 @@
+/* style1.css */
+
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .carousel-container {
-    max-width: 800px;
-    margin: 50px auto;
-  }
-  
-  .carousel-image {
-    width: 100%;
-    height: auto;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1f242d;
+  padding: 15px;
+  text-align: center;
+  color: #ddd;
+}
+
+.parrafo {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+  max-height: 100px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.parrafo.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.parrafo:hover {
+  color: #de43ba;
+}
+
+@keyframes cambioColor {
+  from { color: #1f242d; }
+  to { color: #de43ba; }
+}
+
+.parrafo-animado {
+  animation: cambioColor 2s infinite alternate;
+}
+
+.mostrar-mas.expandido + .parrafo {
+  max-height: none;
+}
+
+.mostrar-mas {
+  cursor: pointer;
+  color: #de43ba;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.mostrar-mas:hover {
+  color: #1f242d;
+}
