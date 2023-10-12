@@ -1,35 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+  background: #1f242d;
+  color: #ccc;
+  height: 100vh;
+  font-family: "Playfair Display", serif;
+  display: flex;
+  overflow: hidden;
+}
+
+.sobre-mi {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--second-bg-color);
+}
+span {
+  color: #de43ba;
+}
+
+.about-img img {
+  width: 25vw;
+  border-radius: 50%;
+  margin-left: 150px;
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+    0 12px 12px rgba(0, 0, 0, 0.25), 0 16px 16px rgba(0, 0, 0, 0.25),
+    0 20px 20px #de43ba;
+  position: relative;
+}
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+.about-content {
+  margin-left: 150px;
+  width: 800px;
+}
+.about-content h2 {
+  text-align: start;
+  line-height: 1.2;
+  font-size: 30px;
+  margin-left: 13px;
+}
+.about-content p {
+  font-size: 15px;
+  margin: 2rem 3rem 3rem;
+  text-align: justify;
+  display:none;
+}
+article{
+
+  font-size: 15px;
+  margin: 2rem 3rem 3rem;
+  text-align: justify;
+}
+/* ... (otros estilos) ... */
+.parrafo {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+  max-height: 100px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.parrafo.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.botones-fin {
+  display: flex;
+  justify-content:start;
+  margin-left: 20px;
+}
+.mostrar-mas {
+  display: inline-block;
+  color: #de43ba;
+  font-weight: bold;
+  transition: color 0.3s;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
+  0 6px 6px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+  0 4px 4px #de43ba;
+}
+
+
+.mostrar-menos {
+  display: none;
+  color: #de43ba;
+  font-weight: bold;
+  transition: color 0.3s;
+  cursor: pointer;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
+  0 6px 6px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+  0 4px 4px #de43ba;
+}
+
+.about-content p.mostrar {
+  display: block;
+}
+/* ... (otros estilos) ... */
+
+@media screen and (max-width: 768px) {
+  .sobre-mi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
-  .masonry-container {
-    max-width: 800px;
-    margin: 50px auto;
-  }
-  
-  .masonry {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -16px; /* Margen negativo para compensar el espacio entre los elementos */
-  }
-  
-  .masonry-item {
-    flex: 1 1 calc(33.33% - 16px); /* 3 columnas con un espacio de 16px entre ellas */
-    margin: 16px; /* Espacio entre los elementos */
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .masonry-image {
+
+  .about-img img {
     width: 100%;
-    height: auto;
-    transition: transform 0.3s;
+    margin: 20px 0;
   }
-  
-  /* Efecto de zoom al pasar el ratón sobre una imagen */
-  .masonry-item:hover .masonry-image {
-    transform: scale(1.1);
+
+  .about-content {
+    padding: 20px;
   }
-  
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .about-content h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+}
+
+.volver {
+  display: inline-block;
+  background-color: #de43ba;
+  color: #1f242d;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25),
+    0 6px 6px rgba(0, 0, 0, 0.25), 0 8px 8px rgba(0, 0, 0, 0.25),
+    0 4px 4px #de43ba;
+}
+
+.volver:hover {
+  background-color: #1f242d;
+  color: #de43ba;
+}
+
+.hexagon {
+  position: absolute;
+  transition: transform 2s ease-in-out;
+  width: 90px;
+  height: 102px;
+  background-color: transparent;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  border: 2px solid #de43ba;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 2;
+  padding: 10px;
+}
+
+.hexagon:hover {
+  background-color: #de43ba;
+}
