@@ -1,11 +1,10 @@
-/* Otro estilo para el texto utilizando FadeIn, cambialo en index.html*/
 $(document).ready(function() {
-  var parrafos = $('.parrafo');
-  var indiceActual = 0;
+  let parrafos = $('.parrafo');
+  let indiceActual = 0;
 
   function mostrarSiguiente() {
     if (indiceActual < parrafos.length) {
-      $(parrafos[indiceActual]).fadeIn(); // Cambiado a fadeIn
+      $(parrafos[indiceActual]).fadeIn().css('color', '#de43ba'); // Cambiado a fadeIn y color
       indiceActual++;
     } else {
       $('.mostrar-mas').hide();
@@ -13,4 +12,7 @@ $(document).ready(function() {
   }
 
   $('.mostrar-mas').on('click', mostrarSiguiente);
-});
+
+  
+  });
+  
