@@ -28,7 +28,7 @@ nav a {
 
 nav a:hover {
   background-color: #de43ba;
-  color: #ddd; /* Mantén el color del texto blanco en el hover */
+  color: #ddd; 
 }
 
 .contenido {
@@ -38,16 +38,22 @@ nav a:hover {
 
 .parrafo {
   display: none;
-  background: linear-gradient(45deg, #1f242d, #de43ba); /* Ejemplo de gradiente */
-  color: #fff; /* Asegura que el texto sea legible en el fondo */
-  padding: 20px; /* Añade un poco de espacio alrededor del texto */
+  background: linear-gradient(45deg, #1f242d, #de43ba); 
+  color: #fff; 
+  padding: 20px; 
 }
 
 
 .mostrar-mas {
   cursor: pointer;
-  color: #fff; /* Cambiado a blanco para ser más visible en el fondo oscuro */
+  color: #fff; 
+  background: #1f242d;
+  padding: 15px;
+  border-radius: 20%;
+  margin: 5px;
 }
+
+
 
   
   
